@@ -18,11 +18,11 @@ The overall process for generating the light is as follows:
 
 
 --The shaders--
-LightTextures: Generates a texture which is white inbetween three coordinates, generating a white triangle and otherwise blank texure.
-Combiner: Puts two textures together.
-CircleLightRemover: Takes a coordinate and a radius, and then blanks out the pixels in a circle around this point with the given radius. 
-FallOff: Increases the alpha value the further away a pixel is from a given point, and colors all pixels in a given color.
-CombineLightSources: Combines twoo complete LightTextures together, and ensures that the light color and intensity mixes correct.
-CombineWithSource: This puts the final light texture atop the source texture, and applies darkness to the unlit area with a given shadow intensity.
+1) LightTextures: Generates a texture which is white inbetween three coordinates, generating a white triangle and otherwise blank texure.
+2) Combiner: Puts two textures together.
+3) CircleLightRemover: Takes a coordinate and a radius, and then blanks out the pixels in a circle around this point with the given radius. 
+4) FallOff: Increases the alpha value the further away a pixel is from a given point, and colors all pixels in a given color.
+5) CombineLightSources: Combines twoo complete LightTextures together, and ensures that the light color and intensity mixes correct.
+6) CombineWithSource: This puts the final light texture atop the source texture, and applies darkness to the unlit area with a given shadow intensity.
 
 
